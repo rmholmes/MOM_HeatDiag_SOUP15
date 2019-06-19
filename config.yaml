@@ -19,17 +19,17 @@ restart_freq: 1
 
 # Collate:
 collate:
-     glob: False
-     enable: true
+#     glob: False
+#     enable: true
      queue: express
      memory: 4GB
-     walltime: 05:00:00
-     mpi: true
+     walltime: 04:00:00
+#     mpi: true
      ncpus: 4
-     threads: 2
-     flags: -r -v
-     exe: /short/public/aph502/mppnccombine-fast
-     restart: true
+#     threads: 2
+     flags: -n4 -z -m -r
+     exe: /short/v45/aph502/mom/bin/mppnccombine
+#     restart: true
 
 # Misc
 stacksize: unlimited
